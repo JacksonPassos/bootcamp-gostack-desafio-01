@@ -5,7 +5,13 @@
   "repository": "https://github.com/JacksonPassos/bootcamp-gostack-desafio-01.git",
   "author": "Jackson Passos <jacksonguitar33@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
