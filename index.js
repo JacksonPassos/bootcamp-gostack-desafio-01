@@ -26,4 +26,14 @@ server.put('/projects/:id', (req, res) => {
     res.json(arr)
 })
 
+server.delete('/projects/:id', (req, res) => {
+    const { id } = req.params
+
+    for (a in arr) {
+        if(arr[a].id == id) arr.splice([a], 1)
+    }
+
+    res.json(arr)
+})
+
 server.listen('3000')
