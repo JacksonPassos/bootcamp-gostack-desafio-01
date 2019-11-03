@@ -15,6 +15,15 @@ server.post('/projects', (req, res) => {
     res.json(arr)
 })
 
+server.post('/projects/:id/tasks', (req, res) => {
+    const { id } = req.params
+    const { title } = req.body
+    for (a in arr) {
+        if(arr[a].id == id) arr[a].task.push(title)
+    }
+    res.json(arr)
+})
+
 server.put('/projects/:id', (req, res) => {
     const { id } = req.params
     const { title } = req.body
